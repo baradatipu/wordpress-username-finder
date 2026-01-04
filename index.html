@@ -1,1 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Basic SEO -->
+  <meta charset="UTF-8">
+  <title>WordPress Username Finder Tool | Find WP Admin Usernames Online</title>
+  <meta name="description" content="Free online WordPress Username Finder tool. Enter any website and instantly find publicly available WordPress usernames using REST API. No login required.">
+  <meta name="keywords" content="wordpress username finder, wp admin finder, wordpress user enum tool, wp-json users, wordpress security tool">
+  <meta name="author" content="WP Username Finder Tool">
+  <meta name="robots" content="index, follow">
 
+  <!-- Mobile -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="WordPress Username Finder Tool">
+  <meta property="og:description" content="Find public WordPress usernames from any website using REST API. Free and fast.">
+  <meta property="og:type" content="website">
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="WordPress Username Finder Tool">
+  <meta name="twitter:description" content="Free tool to find WordPress usernames online">
+
+  <!-- Canonical -->
+  <link rel="canonical" href="https://baradatipu.github.io/wordpress-username-finder">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    "name": "WordPress Username Finder",
+    "description": "Find publicly available WordPress usernames using REST API",
+    "applicationCategory": "DeveloperTool",
+    "operatingSystem": "All"
+  }
+  </script>
+</head>
+<body>
+
+<div class="page">
+
+  <header>
+    <h1>WordPress Username Finder Tool</h1>
+    <p>Find publicly available WordPress usernames from any website</p>
+  </header>
+
+  <div class="tool-box">
+    <label for="siteUrl">Enter Website URL</label>
+    <input
+      type="text"
+      id="siteUrl"
+      placeholder="example.com or https://example.com"
+    >
+    <button onclick="fetchUsers()">Find Usernames</button>
+
+    <div id="result"></div>
+  </div>
+
+  <section>
+    <h2>How this tool works</h2>
+    <p>
+      This tool uses the official WordPress REST API endpoint
+      <code>/wp-json/wp/v2/users/</code> to detect publicly accessible usernames.
+    </p>
+  </section>
+
+  <section>
+    <h2>Is this legal?</h2>
+    <p>
+      Yes. The tool only reads publicly available information exposed by the website.
+    </p>
+  </section>
+
+  <section>
+    <h2>Who should use this tool?</h2>
+    <ul>
+      <li>Developers</li>
+      <li>Website owners</li>
+      <li>Security testers</li>
+      <li>SEO professionals</li>
+    </ul>
+  </section>
+
+  <footer>
+    © 2026 WordPress Username Finder Tool
+  </footer>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
